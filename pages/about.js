@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Link from "next/link";
 
-export default class index extends Component {
+class about extends Component {
   render() {
     return (
       <div>
@@ -19,8 +19,10 @@ export default class index extends Component {
             <Link href="/about">About</Link>
           </li>
         </ul>
-        <h1>This is Home Page</h1>
+        <h1>This is about page</h1>
       </div>
     );
   }
 }
+
+export default about;
