@@ -20,6 +20,7 @@ export default class index extends Component {
           </li>
         </ul>
         <h1>This is Home Page</h1>
+        <img src="images/sujon.png" alt="sujon" />
       </div>
     );
   }
