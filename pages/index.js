@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Link from "next/link";
 import Head from "next/head";
 
+import Style from "../css/Style.module.css";
+
 export default class index extends Component {
   render() {
     return (
@@ -33,7 +35,7 @@ export default class index extends Component {
             <Link href="/about">About</Link>
           </li>
         </ul>
-        <h1>This is Home Page</h1>
+        <h1 className={Style.myText}>This is Home Page</h1>
         <img src="images/sujon.png" alt="sujon" />
       </div>
     );
