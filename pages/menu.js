@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
+import Router from "next/router";
 
 class Menu extends Component {
   render() {
@@ -20,7 +21,8 @@ class Menu extends Component {
             </Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            {/* <Link href="/contact">Contact</Link> */}
+            <button onClick={() => Router.push("/contact")}>Contact</button>
           </li>
         </ul>
       </div>
