@@ -1,16 +1,14 @@
 import React, { Component } from "react";
-
-export async function getServerSideProps() {
-  const res = await fetch("https://restcountries.com/v3.1/all");
-  const json = await res.json();
-  return {
-    props: { countryList: JSON.stringify(json) },
-  };
-}
+import Menu from "./menu";
 
 class index extends Component {
   render() {
-    return <div>{this.props.countryList}</div>;
+    return (
+      <div>
+        <Menu />
+        <h2>Index Page</h2>
+      </div>
+    );
   }
 }
 
