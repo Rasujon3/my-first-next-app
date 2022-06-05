@@ -22,7 +22,14 @@ class Menu extends Component {
           </li>
           <li>
             {/* <Link href="/contact">Contact</Link> */}
-            <button onClick={() => Router.push("/contact")}>Contact</button>
+            {/* <button onClick={() => Router.push("/contact")}>Contact</button> */}
+            <button
+              onClick={() =>
+                Router.push("/contact", undefined, { shallow: true })
+              }
+            >
+              Contact
+            </button>
           </li>
         </ul>
       </div>
