@@ -36,6 +36,7 @@ export default class index extends Component {
           </li>
         </ul>
         <h1 className={Style.myText}>This is Home Page</h1>
+        <button className="btn btn-primary">My Btn</button>
         <img src="images/sujon.png" alt="sujon" />
       </div>
     );
